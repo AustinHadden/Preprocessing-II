@@ -35,6 +35,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+      flex-direction: column;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -50,6 +53,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile{
+      width:100%;
+    }
 
     img {
       border-radius: 10px;
@@ -62,6 +68,7 @@
     display: flex;
     justify-content: space-between;
     @media @mobile{
+      width:100%;
      flex-direction: column;
     }
 
@@ -69,8 +76,9 @@
       width: 30%;
       margin-bottom: 30px;
       @media @mobile{
-        width:80%;
-        justify-content: center;
+        
+        width:100%;
+        text-align: center;
       }
     }
   }
